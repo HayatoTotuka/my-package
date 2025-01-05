@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2025 totuka hayato
 # SPDX-License-Identifier: BSD-3-Clause
 
+import os
 import rclpy
 from rclpy.node import Node
 import requests
@@ -12,7 +13,7 @@ class WeatherTalker(Node):
         super().__init__("WeatherTalker")
         self.pub = self.create_publisher(String, "chiba_weather", 10)
         self.create_timer(20.0, self.cb)
-        self.api_key = "76cae7bab61e6af498b33c580606e841"
+        self.api_key = os.getenv("weather_KEY")
         self.city = "Chiba"
         self.unit = "metric"
 
