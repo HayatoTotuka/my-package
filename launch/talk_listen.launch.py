@@ -6,7 +6,7 @@ import launch_ros.actions
 
 def generate_launch_description():
 
-    weather_humidity_talk = launch_ros.actions.Node(
+    weather_humidity_talker = launch_ros.actions.Node(
         package='mypkg',
         executable='weather_humidity_talker',
         )
@@ -16,5 +16,5 @@ def generate_launch_description():
         #output='screen'
         #)
 
-    return launch.LaunchDescription([weather_humidity_talk])
+    return launch.LaunchDescription([weather_humidity_talker])
 
