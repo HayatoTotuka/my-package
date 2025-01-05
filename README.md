@@ -1,3 +1,4 @@
+[![test](https://github.com/HayatoTotuka/my-package/actions/workflows/test.yml/badge.svg)](https://github.com/HayatoTotuka/my-package/actions/workflows/test.yml)
 # weather_humidity
 ロボットシステム学のパッケージ
 
