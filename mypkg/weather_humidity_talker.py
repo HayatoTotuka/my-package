@@ -27,7 +27,6 @@ class WeatherTalker(Node):
             humidity = data["main"]["humidity"]
             return temperature, humidity
         except requests.exceptions.RequestException as e:
-            self.get_logger().error(f"Error fetching weather data: {e}")
             return None, None
 
     def cb(self):
@@ -36,9 +35,6 @@ class WeatherTalker(Node):
             msg = String()
             msg.data = f"気温: {temperature}°C, 湿度: {humidity}%"
             self.pub.publish(msg)
-            self.get_logger().info(f"Published: {msg.data}")
-        else:
-            self.get_logger().warning("Failed to fetch or publish weather data.")
 
 
 def main():
