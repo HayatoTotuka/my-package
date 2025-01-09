@@ -10,7 +10,7 @@
 ## 使用方法
 
 ```
-ros2 run mypkg talker
+ros2 run mypkg weather_humidity_talker
 ```
 ```
 ros2 topic echo chiba_weather
