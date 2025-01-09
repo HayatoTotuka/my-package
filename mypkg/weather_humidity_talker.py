@@ -13,7 +13,7 @@ class WeatherTalker(Node):
         super().__init__("WeatherTalker")
         self.pub = self.create_publisher(String, "chiba_weather", 10)
         self.create_timer(20.0, self.cb)
-        self.api_key = os.getenv("weather_KEY")
+        self.api_key = os.getenv("WEATHER_KEY")
         self.city = "Chiba"
         self.unit = "metric"
 
