@@ -1,11 +1,14 @@
 [![test](https://github.com/HayatoTotuka/my-package/actions/workflows/test.yml/badge.svg)](https://github.com/HayatoTotuka/my-package/actions/workflows/test.yml)
-# weather_humidity
-ロボットシステム学のパッケージ
+# ROS2　千葉の天気取得パッケージ
+## パッケージ概要
+OpenWeatherMapのAPIを使用して、２０秒ごとに千葉県の気温、湿度を取得しパブリッシュするパッケージ
 
+# ノード
+## weather_humidity_talkerノード
+- OpenWeatherMapのAPIを取得し、今の千葉の気温、湿度をパブリッシュする
 
-## 千葉の気温、湿度を表示するノード
-20秒ごとにOpenWeatherMapから千葉の気温、湿度を取得してパブリッシュします
-
+## topic
+公開されるtopicは` chiba_weather `で、千葉の天気を表示します。
 
 ## 使用方法
 
