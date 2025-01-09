@@ -1,6 +1,6 @@
 [![test](https://github.com/HayatoTotuka/my-package/actions/workflows/test.yml/badge.svg)](https://github.com/HayatoTotuka/my-package/actions/workflows/test.yml)
 # ROS2　千葉の天気取得パッケージ
-このパッケージは、OpenWeatherMap API を利用して、20秒ごとに千葉県の気温と湿度を取得し、それをROS2のトピックとして公開する機能を提供します。
+このパッケージは、OpenWeatherMap API を利用して、20秒ごとに千葉県の気温と湿度を取得し、それをROS2のトピックとして公開します。
 
 ## パッケージ概要
 - 千葉県の気温と湿度を定期的に取得し、ROS2トピックで配信します
